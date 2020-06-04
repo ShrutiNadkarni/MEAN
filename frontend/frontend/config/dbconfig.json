@@ -1,0 +1,4 @@
+{
+    "connectionString" : "mongodb://localhost/company",
+    "options" : {"useMongoClient": true}
+}

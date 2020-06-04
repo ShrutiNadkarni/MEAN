@@ -1,0 +1,57 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.top{
+  justify-content:center;
+}
+
+/* Full-width input fields */
+/* input[type=text], input[type=password] {
+  width: 100%;
+  padding: 0px 0px;
+  /*margin: 8px 0;
+  display: inline-block;*/
+  /* background: transparent;
+   outline: none;
+   outline-style: none;
+   border-top: none;
+   border-right: none;
+   border-left: none;
+   border-bottom: 1px solid blue;
+  
+} */
+
+.text-line {
+  width: 100%;
+  padding: 0px 0px;
+  /*margin: 8px 0;
+  display: inline-block;*/
+   background: transparent;
+   outline: none;
+   outline-style: none;
+   border-top: none;
+   border-right: none;
+   border-left: none;
+   border-bottom: 1px solid blue;
+  
+}
+
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+span.pswd {
+     display: block;
+     float: none;
+  }

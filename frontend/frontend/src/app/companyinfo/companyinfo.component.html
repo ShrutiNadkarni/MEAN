@@ -1,0 +1,179 @@
+<p>companyinfo works!</p>
+<div class="sidenav">
+   
+  <img src="assets/logo.png.png" style="width: 50px;">
+
+  <div>
+    <h4><b>TMC Company Name</b></h4>
+  </div>
+
+  <hr style="height:2px;border-width:0;color:black;">
+
+  <a routerLink="/companyinfo">Company Information</a>
+  <a routerLink="legalentities.html">Legal Entities</a>
+  <a routerLink="account.html">Account Details</a>
+  <a routerLink="locations.html">Locations</a>
+  <a routerLink="departments.html">Departments</a>
+  <a routerLink="costcenter.html">Cost Center</a>
+  <a routerLink="designation.html">Designation</a>
+  
+ </div>
+
+<div class="main">
+
+  <div>
+  <h2>Company Information</h2>
+  </div>
+   <br>
+    
+   <div>
+    <!--<form (ngSubmit)="onSubmit()" #myForm="ngForm">-->
+      <form #myForm="ngForm">
+
+      <!--Row1 -->
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="legalentityname">Legal Entity Name*</label>
+          <input type="string" class="form-control" id="legalentityname" placeholder="TMC Company Name" disabled>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="legalentityname">Legal Entity Code*</label>
+          <input type="number" class="form-control" id="legalentitycode" placeholder="367876" disabled>
+        </div>
+      </div>
+
+      <!--Row2-->
+      <div class="form-row">
+
+        <div class="form-group col-md-3"><!--First Name-->
+          <label for="fname">First Name*</label>
+          <input type="string" class="form-control" id="fname" placeholder="Aaksha" disabled>
+        </div>
+
+        <div class="form-group col-md-3"><!--Last Name-->
+          <label for="lname">Last Name*</label>
+          <input type="string" class="form-control" id="lname" placeholder="Sharma" disabled>
+        </div>
+
+        <div class="form-group col-md-2"><!--Email-->
+          <label for="email">Business Email ID*</label>
+          <input type="string" class="form-control" id="email" placeholder="tmcadmin@live.com" disabled>
+        </div>
+
+        <div class="form-group col-md-4"><!--Mobile Number-->
+           <div>
+              <label for="mobileno"> Mobile Number</label>
+           </div>
+          <div class="form-group col-md-5">
+               <select id="ccode" class="form-control" style="height: 30px;">
+                 <option selected>IND (+91)</option>
+                 <option>USA (+1)</option>
+                 <option>AUS (+61)</option>
+               </select>
+          </div>
+          <div class="form-group col-md-6">
+              <input type="number" class="form-control" id="mobileno" placeholder="9887658767" disabled>
+          </div>
+        </div>
+
+      </div>
+      
+      <!--Row 3-->
+      <div class="form-row">
+          <div class="form-group col-md-6"><!--Address Line 1-->
+            <label for="addr1">Registered Address Line 1</label>
+            <input type=text class="form-control" id="addr1" required>
+          </div>
+          <div class="form-group col-md-6"><!--Address Line 2-->
+            <label for="addr2">Registered Address Line 2</label>
+            <input type=text class="form-control" id="addr2" required>
+          </div>
+      </div>
+
+       <!--Row 4-->
+       <div class="form-row">
+
+        <div class="form-group col-md-3"><!--Country-->
+          <label for="country">Country</label>
+          <select id="country" class="form-control" style="height: 30px;">
+            <option selected></option>
+            <option>India</option>
+            <option>United States of America</option>
+            <option>Australia</option>
+          </select>
+        </div>
+
+        <div class="form-group col-md-3"><!--State-->
+          <label for="state">State</label>
+          <select id="state" class="form-control" style="height: 30px;">
+            <option selected></option>
+            <option>Maharashtra</option>
+            <option>Arizona</option>
+            <option>New South Wales</option>
+          </select>
+        </div>
+
+        <div class="form-group col-md-3"><!--City-->
+          <label for="city">City</label>
+          <select id="city" class="form-control" style="height: 30px;">
+            <option selected></option>
+            <option>Mumbai</option>
+            <option>Pune</option>
+            <option>Phoenix</option>
+            <option>Sydney</option>
+          </select>
+        </div>
+
+        <div class="form-group col-md-3"><!--Postal Code-->
+          <label for="postalcode">Postal Code</label>
+          <input type=number class="form-control" id="postalcode" required>
+        </div>
+
+       </div>
+
+
+       <!--Row 5-->
+       <div class="form-row">
+        <div class="form-group col-md-2">
+          <div><label for="logo">Logo</label></div>
+          <div id="logo">
+            <div style="position: relative;overflow: hidden;" class="file btn btn-lg btn-primary">Upload
+            <input type="file" name="logo" required/>
+            </div></div>
+        </div>
+      </div>
+      
+      <div>
+        <p>Allowed Formats:JPG/PNG,Maximum file size:1mb,Resolution:200px * 90px </p>
+      </div>
+
+      <br><br>
+
+      <div class="form-group"> <!-- Update Button -->
+        <button type="submit" class="btn btn-secondary" [disabled]="!myForm.valid">Update</button>
+      </div>
+
+    </form>
+   </div>
+
+
+
+
+     
+
+
+
+
+
+
+
+   
+   
+
+
+
+
+
+  
+
+<router-outlet></router-outlet>
