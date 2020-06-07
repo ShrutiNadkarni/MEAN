@@ -50,6 +50,7 @@ passport.deserializeUser(function (id, done) {
 passport.ensureAuthenticated = (req ,res ,next) => {
     if(req.isAuthenticated()){
         return next();
+         res.redirect('/slandingpg');
     } else {
         req.flash("error","Please login first");
         res.redirect('/login');
