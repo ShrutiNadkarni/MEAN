@@ -33,7 +33,7 @@ const appRoutes:Routes=[
     AppComponent,
     LoginComponent,
     SlandingpgComponent,
-    CompanyinfoComponent
+    CompanyinfoComponent,
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
